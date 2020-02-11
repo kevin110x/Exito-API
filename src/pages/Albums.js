@@ -37,7 +37,7 @@ export class Albums extends Component {
           <br />
           {this.state.albums.map(album => {
             return (
-              <Link to={`/Songs/${album.id}`} key={album.id} style={{ color: "white" }}>
+              <Link to={`/Songs/${album.id}`} key={album.id} style={{ color: "white", width: "900px" }}>
                 <img
                   className="SizeimgAlbum"
                   src={album.image}
