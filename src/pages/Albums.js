@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Header } from "../components/Header";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export class Albums extends Component {
   constructor(props) {
@@ -36,7 +37,7 @@ export class Albums extends Component {
           <br />
           {this.state.albums.map(album => {
             return (
-              <div key={album.id}>
+              <Link to={`/Songs/${album.id}`} key={album.id} style={{ color: "white" }}>
                 <img
                   className="SizeimgAlbum"
                   src={album.image}
@@ -47,7 +48,7 @@ export class Albums extends Component {
                   Canciones: {album.total_tracks}
                 </small>
                 <hr style={{ height: 0.5 }} />
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -57,7 +57,7 @@
   padding-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  height: -webkit-fill-available;
   padding-left: 20px;
   background-color: #151515;
 }
@@ -71,6 +71,21 @@
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.Content-album {
+  padding-top: 10px;
+  background-color: #303030;
+  color: white;
+  /* height: -webkit-fill-available; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.Songs {
+  height: -webkit-fill-available;
+  text-align: center;
 }
 
 .Text-wrapper {
@@ -104,12 +119,3 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#000000', GradientType=0 );
 }
 
-.Content-album {
-  margin-top: 10px;
-  background-color: #303030;
-  color: white;
-  /* height: 100vh; */
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-}
