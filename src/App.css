@@ -1,38 +1,115 @@
 .App {
+  text-align: justify;
+}
+
+.Title {
+  color: white;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-left: 12px;
+  background-color: #212121;
+}
+
+.Search-wrapper {
+  display: inline;
+  justify-content: right;
+}
+
+.LogoS {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.List {
+  float: right;
+  text-align: end;
+  align-items: center;
+  font-size: 30px;
+  padding-right: 8px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Sizeimg {
+  width: 140px !important;
+  height: 140px !important;
+}
+
+.SizeimgAlbum {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 440px) {
+  .List {
+    display: none;
+  }
+}
+
+.ArtistsList {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  padding-left: 20px;
+  background-color: #151515;
+}
+
+.Artist-Item {
+  margin-left: 5px;
+  margin-bottom: 80px;
+  color: white;
+  width: 12%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.Text-wrapper {
+  width: 110px;
+  position: relative;
+  margin-top: -50%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Text-wrapper p {
+  margin-left: 30px;
+  text-align: center;
   color: white;
+  font-size: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.HeaderAl {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 228px;
+  background: rgba(46,46,46,1);
+  background: -moz-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 2%, rgba(38,38,38,1) 28%, rgba(33,33,33,1) 35%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(46,46,46,1)), color-stop(2%, rgba(46,46,46,1)), color-stop(28%, rgba(38,38,38,1)), color-stop(35%, rgba(33,33,33,1)), color-stop(62%, rgba(0,0,0,1)), color-stop(71%, rgba(0,0,0,1)), color-stop(95%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 2%, rgba(38,38,38,1) 28%, rgba(33,33,33,1) 35%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 2%, rgba(38,38,38,1) 28%, rgba(33,33,33,1) 35%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 2%, rgba(38,38,38,1) 28%, rgba(33,33,33,1) 35%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 2%, rgba(38,38,38,1) 28%, rgba(33,33,33,1) 35%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#000000', GradientType=0 );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Content-album {
+  margin-top: 10px;
+  background-color: #303030;
+  color: white;
+  /* height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }
