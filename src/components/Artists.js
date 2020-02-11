@@ -17,7 +17,7 @@ export class Artists extends Component {
 
   render() {
     return (
-      <div className="ArtistsList columns">
+      <div className="ArtistsList">
         {this.state.artists.map(artist => {
           return (
             <Link
