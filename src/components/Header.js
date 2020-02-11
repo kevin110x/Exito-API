@@ -20,7 +20,7 @@ export class Header extends Component {
   render() {
     return (
       <div className="HeaderAl">
-        <figure className="image">
+        <figure className="image" style={{textAlign: "-webkit-center" }}>
           <img
             className="is-rounded Sizeimg"
             src={this.state.artist.image}
